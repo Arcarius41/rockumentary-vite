@@ -1,96 +1,53 @@
-/* App.css */
-
-:root {
-  --dark-color: #121418;
-  --dark-var-1-color: #222933;
-  --dark-var-2-color: #292f37;
-  --dark-var-3-color: #8694a6;
-  --dark-var-4-color: #9dadc1;
-  --green-color: #01c29a;
-  --dark-green-color: #0ca385;
-  --yellowish-color: #f2e9d0;
-  --dark-yellowish-color: #d4ccb6;
-  --white-color: #fff;
-  --red-color: #ff0000;
-  --gradient: linear-gradient(45deg, var(--green-color), var(--red-color));
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  background-color: var(--dark-var-1-color);
-  color: rgba(255, 255, 255, 0.87);
-}
-
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 nav {
-  background-color: var(--dark-var-2-color);
-  padding: 1rem;
-}
-
-nav .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--white-color);
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
 }
 
-nav ul li {
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li {
   display: inline;
 }
 
-nav ul li a {
-  color: var(--white-color);
+.nav-links a {
+  color: #fff;
   text-decoration: none;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 15px;
 }
 
-.hero {
-  text-align: center;
-  background: var(--gradient);
-  padding: 2rem 0;
-  position: relative;
+.social-icons li {
+  display: inline;
 }
 
-.hero-text {
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--white-color);
-  margin-bottom: 1rem;
-}
-
-.hero-image {
-  width: 100%;
-  max-width: 1024px;
-  height: auto;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
 }
 
 .content {
-  flex: 1;
-  padding: 2rem;
+  padding: 20px;
 }
 
 .footer {
-  background-color: var(--dark-var-2-color);
   text-align: center;
-  padding: 1rem;
-  color: var(--white-color);
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }

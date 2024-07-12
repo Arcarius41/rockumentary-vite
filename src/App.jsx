@@ -12,11 +12,15 @@ function App() {
       <div className="app-container">
         <nav>
           <div className="logo">My Logo</div>
-          <ul>
+          <ul className="nav-links">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/store">Store</Link></li>
             <li><Link to="/bands">Bands</Link></li>
+          </ul>
+          <ul className="social-icons">
+            <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
           </ul>
         </nav>
         <main className="content">
