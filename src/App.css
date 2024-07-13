@@ -1,9 +1,10 @@
+/* App.css */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #050000;
   color: #fff;
 }
 
@@ -45,7 +46,7 @@ nav {
 .footer {
   text-align: center;
   padding: 10px;
-  background: #333;
+  background: #050000;
   color: #fff;
   position: relative;
   bottom: 0;

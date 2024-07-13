@@ -1,3 +1,4 @@
+/* Home.css */
 .hero {
   text-align: center;
   padding: 50px 0;
@@ -7,11 +8,13 @@
 
 .hero-text {
   font-size: 2em;
+  text-align: center;
   margin-bottom: 20px;
 }
 
 .hero-image {
   max-width: 100%;
+  max-height: 80vh;
   height: auto;
   display: block;
   margin: 0 auto;
