@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import Bands from "./components/Bands";
@@ -13,22 +13,16 @@ function App() {
           <div className="logo">My Logo</div>
           <ul className="nav-links">
             <li>
-              <a href="https://www.uskidsrockumentary.com/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="https://www.uskidsrockumentary.com/about">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a
-                href="https://3b1799-22.myshopify.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Store
-              </a>
+              <a href="https://3b1799-22.myshopify.com">Store</a>
             </li>
             <li>
-              <a href="https://www.uskidsrockumentary.com/bands">Bands</a>
+              <Link to="/bands">Bands</Link>
             </li>
           </ul>
           <ul className="social-icons">
