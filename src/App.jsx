@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
-import Store from "./components/Store";
 import Bands from "./components/Bands";
 import "./App.css";
 
@@ -20,7 +19,13 @@ function App() {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/store">Store</Link>
+              <a
+                href="https://3b1799-22.myshopify.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Store
+              </a>
             </li>
             <li>
               <Link to="/bands">Bands</Link>
@@ -60,7 +65,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/store" element={<Store />} />
             <Route path="/bands" element={<Bands />} />
           </Routes>
         </main>
