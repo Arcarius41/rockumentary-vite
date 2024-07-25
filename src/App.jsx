@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
 import Bands from "./components/Bands";
@@ -13,10 +13,10 @@ function App() {
           <div className="logo">My Logo</div>
           <ul className="nav-links">
             <li>
-              <Link to="/">Home</Link>
+              <a href="https://www.uskidsrockumentary.com/">Home</a>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <a href="https://www.uskidsrockumentary.com/about">About</a>
             </li>
             <li>
               <a
@@ -28,7 +28,7 @@ function App() {
               </a>
             </li>
             <li>
-              <Link to="/bands">Bands</Link>
+              <a href="https://www.uskidsrockumentary.com/bands">Bands</a>
             </li>
           </ul>
           <ul className="social-icons">
