@@ -1,12 +1,16 @@
-const express = require('express');
-const basicAuth = require('express-basic-auth');
-const path = require('path');
+import express from 'express';
+import basicAuth from 'express-basic-auth';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000; //port number here
 
 app.use(basicAuth({
-  users: { 'ScriptKitty': 'Meow45*' }, // username:password
+  users: { 'ScriptKitty': 'Meow45*' }, //username and password
   challenge: true
 }));
 
