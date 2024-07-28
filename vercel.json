@@ -1,7 +1,18 @@
 {
-  "buildCommand": "npm run build",
-  "rewrites": [
-    { "source": "/about", "destination": "/index.html" },
-    { "source": "/bands", "destination": "/index.html" }
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "dist/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/server.js"
+    }
   ]
 }
