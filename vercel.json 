@@ -2,6 +2,5 @@
   "rewrites": [
     { "source": "/about", "destination": "/index.html" },
     { "source": "/bands", "destination": "/index.html" }
-  ],
-  "middleware": "middleware.js"
+  ]
 }

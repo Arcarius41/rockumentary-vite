@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(basicAuth({
-  users: { 'username': 'password' }, // Replace with your desired username and password
+  users: { 'ScriptKitty': 'Meow45*' }, // username:password
   challenge: true
 }));
 
