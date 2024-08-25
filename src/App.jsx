@@ -1,5 +1,4 @@
-// App.jsx
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -7,52 +6,31 @@ import Bands from "./components/Bands";
 import "./App.css";
 
 function App() {
+  const [menuActive, setMenuActive] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
+
   return (
     <Router>
       <div className="app-container">
         <nav>
-          <div className="logo">My Logo</div>
-          <ul className="nav-links">
+          <div className="menu-icon" onClick={toggleMenu}>
+            <i className="fas fa-bars"></i>
+          </div>
+          <ul className={`nav-links ${menuActive ? "active" : ""}`}>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={toggleMenu}>Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/about" onClick={toggleMenu}>About</Link>
             </li>
             <li>
-              <a href="https://3b1799-22.myshopify.com">Store</a>
+              <a href="https://3b1799-22.myshopify.com" onClick={toggleMenu}>Store</a>
             </li>
             <li>
-              <Link to="/bands">Bands</Link>
-            </li>
-          </ul>
-          <ul className="social-icons">
-            <li>
-              <a
-                href="https://www.gofundme.com/f/alternative-christian-music-documentary"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fas fa-hand-holding-dollar"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/UsKidsAnAlternativeMusicRebellion"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/uskidsrockumentary/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fab fa-instagram"></i>
-              </a>
+              <Link to="/bands" onClick={toggleMenu}>Bands</Link>
             </li>
           </ul>
         </nav>
