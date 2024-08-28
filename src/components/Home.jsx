@@ -7,9 +7,10 @@ function Home() {
     <div className="home-container">
       <div className="hero-text">A Reality Rock Production</div>
       <img src={HeroImage} alt="Us Kids Poster" className="hero-image" />
-      <div className="social-icons">
-        <span>Check It Out More:</span>
-        <ul>
+      
+      <div className="social-icons-container">
+        <span>Conversations:</span>
+        <ul className="social-icons">
           <li>
             <a
               href="https://www.gofundme.com/f/alternative-christian-music-documentary"
@@ -37,7 +38,28 @@ function Home() {
               <i className="fab fa-instagram"></i>
             </a>
           </li>
+          <li>
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-youtube"></i>
+            </a>
+          </li>
         </ul>
+      </div>
+
+      <div className="video-player">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
       </div>
     </div>
   );

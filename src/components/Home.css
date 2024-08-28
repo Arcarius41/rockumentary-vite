@@ -23,20 +23,21 @@
   margin-top: 20px;
   display: flex;
   justify-content: center;
-  align-items: center; /* Vertically centers the text and icons */
+  align-items: center; /* Ensure vertical alignment */
   color: #fff;
-  font-size: 1.2em; /* Adjust font size if needed */
+  font-size: 1.2em;
 }
 
 .social-icons-container span {
   margin-right: 10px;
 }
 
-.social-icons ul {
+.social-icons {
   list-style: none;
   padding: 0;
   display: flex;
   gap: 20px;
+  margin: 0;
 }
 
 .social-icons li {
@@ -47,4 +48,14 @@
   color: #fff;
   text-decoration: none;
   font-size: 2em;
+}
+.video-player {
+  margin: 60px auto;
+  text-align: center;
+}
+
+.video-player iframe {
+  width: 90%;
+  max-width: 560px;
+  height: auto;
 }

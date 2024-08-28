@@ -32,6 +32,16 @@ function App() {
             <li>
               <Link to="/bands" onClick={toggleMenu}>Bands</Link>
             </li>
+            <li>
+              <a
+                href="https://www.gofundme.com/f/alternative-christian-music-documentary"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={toggleMenu}
+              >
+                Donate
+              </a>
+            </li>
           </ul>
         </nav>
         <main className="content">
