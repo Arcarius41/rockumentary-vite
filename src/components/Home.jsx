@@ -11,7 +11,7 @@ function Home() {
       <div className="social-icons-container">
         <span>Conversations:</span>
         <ul className="social-icons">
-          <li>
+          {/* <li>
             <a
               href="https://www.gofundme.com/f/alternative-christian-music-documentary"
               target="_blank"
@@ -19,7 +19,7 @@ function Home() {
             >
               <i className="fas fa-hand-holding-dollar"></i>
             </a>
-          </li>
+          </li> */}
           <li>
             <a
               href="https://www.facebook.com/UsKidsAnAlternativeMusicRebellion"
@@ -54,9 +54,8 @@ function Home() {
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+          src="https://www.youtube.com/embed/QBiivw6ZF-8"
           title="YouTube video player"
-          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>

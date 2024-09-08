@@ -1,3 +1,4 @@
+/* App.css */
 body {
   display: flex;
   flex-direction: column;
@@ -35,6 +36,8 @@ nav {
   display: flex;
   gap: 15px;
   margin: 0;
+  padding: 0;
+  justify-content: flex-start; /* Ensure items align to the start */
 }
 
 .nav-links li {
@@ -46,23 +49,13 @@ nav {
   text-decoration: none;
 }
 
-.social-icons {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-  margin: 0;
+
+/* Hide the hamburger menu on medium and larger screens */
+.menu-icon {
+  display: none;
 }
 
-.social-icons li {
-  display: inline;
-}
-
-.social-icons a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.5em;
-}
-
+/* Content styles */
 .content {
   flex: 1;
   display: flex;
@@ -82,6 +75,7 @@ nav {
   box-sizing: border-box;
 }
 
+/* For small screens (less than 768px) */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -106,27 +100,18 @@ nav {
     z-index: 2; /* Ensure the menu icon stays on top */
   }
 
-  /* .social-icons {
-    display: none; /* Hide social icons in the mobile menu */
-  } */
+  
 }
 
-.menu-icon {
-  display: none;
-  cursor: pointer;
-}
-
+/* For larger screens (more than 768px) */
 @media (min-width: 769px) {
   .menu-icon {
-    display: none;
+    display: none; /* Hide the hamburger menu */
   }
 
   .nav-links {
-    display: flex;
+    display: flex; /* Display the normal nav links */
   }
 
-  .social-icons {
-    display: flex;
-    margin-top: 0;
-  }
+  
 }
