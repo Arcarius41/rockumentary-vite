@@ -1,0 +1,31 @@
+.bands-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff;
+  }
+  
+  .bands-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #01c29a;
+  }
+  
+  .band-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .band-item h2 {
+    font-size: 1.8em;
+    color: #01c29a;
+    margin-bottom: 10px;
+  }
+  
+  .band-item p {
+    font-size: 1.1em;
+    color: #ddd;
+  }
+  
