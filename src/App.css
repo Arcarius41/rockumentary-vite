@@ -1,4 +1,3 @@
-/* App.css */
 body {
   display: flex;
   flex-direction: column;
@@ -49,7 +48,6 @@ nav {
   text-decoration: none;
 }
 
-
 /* Hide the hamburger menu on medium and larger screens */
 .menu-icon {
   display: none;
@@ -83,10 +81,17 @@ nav {
     position: absolute;
     top: 50px;
     left: 0;
-    width: 100%;
-    background-color: #050000;
+    background-color: rgba(64, 64, 64, 0.9); /* Darker translucent gray background */
     padding: 10px;
+    width: fit-content; /* Background fits slightly wider than the text */
+    max-width: 90%; /* Ensure it doesn't stretch too wide */
+    border-radius: 5px; /* Rounded corners for better look */
     z-index: 1; /* Ensure the menu stays on top */
+  }
+
+  .nav-links li {
+    padding: 10px 15px; /* Adds some padding for better appearance */
+    margin: 5px 0;
   }
 
   .nav-links.active {
@@ -99,8 +104,6 @@ nav {
     cursor: pointer;
     z-index: 2; /* Ensure the menu icon stays on top */
   }
-
-  
 }
 
 /* For larger screens (more than 768px) */
@@ -112,6 +115,4 @@ nav {
   .nav-links {
     display: flex; /* Display the normal nav links */
   }
-
-  
 }
