@@ -9,6 +9,15 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = process.env.PORT || 4000; //port number here
 
+// Add Content Security Policy (CSP) headers
+app.use((req, res, next) => {
+  res.setHeader(
+    "Content-Security-Policy", 
+    "default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline';"
+  );
+  next();
+});
+
 app.use(basicAuth({
   users: { 'ScriptKitty': 'Meow45*' }, //username and password
   challenge: true
