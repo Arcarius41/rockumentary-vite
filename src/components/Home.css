@@ -1,4 +1,5 @@
 /* Home.css */
+
 .hero {
   text-align: center;
   padding: 50px 0;
@@ -18,4 +19,60 @@
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+.social-icons-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+/* The span next to the social icons */
+.social-icons-container span {
+  margin-right: 10px;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.video-player {
+  margin: 60px auto;
+  text-align: center;
+}
+
+.video-player iframe {
+  width: 90%;
+  max-width: 560px;
+  height: 315px;
+}
+
+/* Ensure social icons are always visible */
+@media (max-width: 768px) {
+  .social-icons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Adjust the margin for small screens */
+  }
+  
+  .social-icons {
+    justify-content: center; /* Center icons on small screens */
+  }
 }
