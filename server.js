@@ -13,10 +13,11 @@ const PORT = process.env.PORT || 4000; //port number here
 app.use((req, res, next) => {
   res.setHeader(
     "Content-Security-Policy", 
-    "default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline';"
+    "default-src 'self'; img-src 'self' data:; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;"
   );
   next();
 });
+
 
 app.use(basicAuth({
   users: { 'ScriptKitty': 'Meow45*' }, //username and password
