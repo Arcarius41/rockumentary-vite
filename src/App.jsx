@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Bands from "./components/Bands";
 import "./App.css";
+import RealityLogo from "./assets/Reality_R.jpg"; // Import the logo
 
 function App() {
   const [menuActive, setMenuActive] = useState(false);
@@ -16,9 +17,17 @@ function App() {
     <Router>
       <div className="app-container">
         <nav>
+          {/* Add the logo */}
+          <div className="logo">
+            <Link to="/">
+              <img src={RealityLogo} alt="Reality Rock Logo" className="navbar-logo" />
+            </Link>
+          </div>
+
           <div className="menu-icon" onClick={toggleMenu}>
             <i className="fas fa-bars"></i>
           </div>
+
           <ul className={`nav-links ${menuActive ? "active" : ""}`}>
             <li>
               <Link to="/" onClick={toggleMenu}>Home</Link>

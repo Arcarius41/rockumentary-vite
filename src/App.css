@@ -116,3 +116,8 @@ nav {
     display: flex; /* Display the normal nav links */
   }
 }
+.navbar-logo {
+  height: 50px; /* Adjust size to fit your needs */
+  margin-right: 20px;
+  display: block;
+}

@@ -18,12 +18,13 @@
   max-height: 75vh;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin: 20px auto; /* Adds 20px top and bottom margin */
   margin-left: auto; /* Ensure the image stays centered */
   margin-right: auto; /* Ensure the image stays centered */
   border: 2px solid white;
   box-sizing: border-box;
 }
+
 
 .video-player iframe {
   width: 90%;

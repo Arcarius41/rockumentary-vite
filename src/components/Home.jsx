@@ -5,11 +5,11 @@ import UsKidsWebsiteBanner from '../assets/UsKidsWebsiteBanner.jpg';
 function Home() {
   return (
     <div className="home-container">
-      <div className="hero-text">A Reality Rock Production</div>
+      {/* <div className="hero-text">A Reality Rock Production</div> */}
       <img src={UsKidsWebsiteBanner} alt="Us Kids Poster" className="hero-image" />
       
       <div className="social-icons-container">
-        <span>Conversations:</span>
+        <span>Connect:</span>
         <ul className="social-icons">
           <li>
             <a
@@ -36,6 +36,15 @@ function Home() {
               rel="noopener noreferrer"
             >
               <i className="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://open.spotify.com/playlist/3WioijiRe5NGtTFXdtfQbQ?si=ejzjoW_0SMmRFf90PGljLg&pi=u-1keUEzYpRJSVd"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-spotify"></i>
             </a>
           </li>
         </ul>
