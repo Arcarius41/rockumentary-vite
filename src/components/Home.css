@@ -14,12 +14,25 @@
 }
 
 .hero-image {
-  max-width: 100%;
+  max-width: 98%; /* Reduce the width slightly to leave space for scrollbars */
   max-height: 75vh;
   height: auto;
   display: block;
   margin: 0 auto;
+  margin-left: auto; /* Ensure the image stays centered */
+  margin-right: auto; /* Ensure the image stays centered */
+  border: 2px solid white;
+  box-sizing: border-box;
 }
+
+.video-player iframe {
+  width: 90%;
+  max-width: 560px;
+  height: 315px;
+  border: 2px solid white;
+}
+
+
 
 .social-icons-container {
   margin-top: 20px;
