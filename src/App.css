@@ -23,11 +23,12 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #050000;
-  color: #fff;
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
   width: 100%;
   box-sizing: border-box;
-  position: relative; /* Ensure nav stays in place */
+  position: relative;
 }
 
 .nav-links {
@@ -36,7 +37,6 @@ nav {
   gap: 15px;
   margin: 0;
   padding: 0;
-  justify-content: flex-start; /* Ensure items align to the start */
 }
 
 .nav-links li {
@@ -44,21 +44,23 @@ nav {
 }
 
 .nav-links a {
-  color: #fff;
+  color: #000000; /* Keep black on larger screens */
   text-decoration: none;
 }
 
-/* Hide the hamburger menu on medium and larger screens */
+.nav-links a:hover {
+  color: #01c29a; /* Example accent color */
+} 
+
 .menu-icon {
   display: none;
 }
 
-/* Content styles */
 .content {
   flex: 1;
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 100px); /* Adjust based on the height of nav and footer */
+  min-height: calc(100vh - 100px);
   width: 100%;
   box-sizing: border-box;
 }
@@ -67,30 +69,47 @@ nav {
   margin-top: auto;
   text-align: center;
   padding: 10px;
-  background: #050000;
-  color: #fff;
+  background: #ffffff;
+  color: #000000;;
   width: 100%;
   box-sizing: border-box;
 }
 
-/* For small screens (less than 768px) */
+/* Hero Image and Logo Adjustments */
+.hero-image {
+  max-width: 98%;
+  max-height: 75vh;
+  height: auto;
+  display: block;
+  margin: 40px auto; /* Adjusts top and bottom margin for better spacing */
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+
+.navbar-logo {
+  height: 50px;
+  margin-right: 20px;
+  display: block;
+}
+
+/* Small Screen Adjustments */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
     position: absolute;
     top: 50px;
-    left: 0;
+    right: 10px; /* Align dropdown menu to the right side */
     background-color: rgba(64, 64, 64, 0.9); /* Darker translucent gray background */
     padding: 10px;
-    width: fit-content; /* Background fits slightly wider than the text */
-    max-width: 90%; /* Ensure it doesn't stretch too wide */
-    border-radius: 5px; /* Rounded corners for better look */
-    z-index: 1; /* Ensure the menu stays on top */
+    width: fit-content;
+    max-width: 90%;
+    border-radius: 5px;
+    z-index: 1;
   }
 
   .nav-links li {
-    padding: 10px 15px; /* Adds some padding for better appearance */
+    padding: 10px 15px;
     margin: 5px 0;
   }
 
@@ -98,26 +117,25 @@ nav {
     display: flex;
   }
 
+  .nav-links a {
+    color: #ffffff; /* Change to desired color for small screens */
+  }
+
   .menu-icon {
     display: block;
     font-size: 2em;
     cursor: pointer;
-    z-index: 2; /* Ensure the menu icon stays on top */
+    z-index: 2;
   }
 }
 
 /* For larger screens (more than 768px) */
 @media (min-width: 769px) {
   .menu-icon {
-    display: none; /* Hide the hamburger menu */
+    display: none;
   }
 
   .nav-links {
-    display: flex; /* Display the normal nav links */
+    display: flex;
   }
-}
-.navbar-logo {
-  height: 50px; /* Adjust size to fit your needs */
-  margin-right: 20px;
-  display: block;
 }

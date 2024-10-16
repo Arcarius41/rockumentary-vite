@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Bands from "./components/Bands";
 import "./App.css";
-import RealityLogo from "./assets/Reality_R.jpg"; // Import the logo
+import RealityLogo from "./assets/RRnoBackground.png"; // Import the logo
 
 function App() {
   const [menuActive, setMenuActive] = useState(false);
