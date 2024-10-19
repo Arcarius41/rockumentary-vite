@@ -1,10 +1,16 @@
 import React from 'react';
 import './About.css';
+import ToddAndJohn from '../assets/Todd&John.jpg'; // Adjust this path to where you store the image
 
 function About() {
   return (
     <div className="about-container">
-      <h1>About Us Kids Rockumentary</h1>
+      {/* Image and caption moved to the top */}
+      <div className="image-container">
+        <img src={ToddAndJohn} alt="Todd Zeller & John Smeby Making It Happen" className="about-image" />
+        <p className="image-caption">Todd Zeller & John Smeby Making It Happen</p>
+      </div>
+
       <p>
         Us Kids Rockumentary is a passionate project aimed at telling the untold stories of the alternative Christian music scene. Our mission is to highlight the incredible journeys of bands and artists who have shaped the movement, bringing hope, rebellion, and a new voice to a generation.
       </p>
