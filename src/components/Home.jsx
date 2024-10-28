@@ -57,6 +57,11 @@ function Home() {
           <blockquote className="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DAqcckhJ09m/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
         </div>
       </div>
+      <div className="signup-container">
+  <h2>Sign Up for Updates & News</h2>
+  <button className="signup-button">Sign Up</button>
+</div>
+
     </div>
   );
 }
