@@ -20,7 +20,11 @@ function App() {
           {/* Add the logo */}
           <div className="logo">
             <Link to="/">
-              <img src={RealityLogo} alt="Reality Rock Logo" className="navbar-logo" />
+              <img
+                src={RealityLogo}
+                alt="Reality Rock Logo"
+                className="navbar-logo"
+              />
             </Link>
           </div>
 
@@ -30,16 +34,24 @@ function App() {
 
           <ul className={`nav-links ${menuActive ? "active" : ""}`}>
             <li>
-              <Link to="/" onClick={toggleMenu}>Home</Link>
+              <Link to="/" onClick={toggleMenu}>
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/about" onClick={toggleMenu}>About</Link>
+              <Link to="/about" onClick={toggleMenu}>
+                About
+              </Link>
             </li>
             <li>
-              <a href="https://3b1799-22.myshopify.com" onClick={toggleMenu}>Store</a>
+              <a href="https://3b1799-22.myshopify.com" onClick={toggleMenu}>
+                Store
+              </a>
             </li>
             <li>
-              <Link to="/bands" onClick={toggleMenu}>Bands</Link>
+              <Link to="/bands" onClick={toggleMenu}>
+                Bands
+              </Link>
             </li>
             <li>
               <a
@@ -61,7 +73,18 @@ function App() {
           </Routes>
         </main>
         <footer className="footer">
-          <p>&copy; 2024 UsKidsRockumentary. All rights reserved.</p>
+          <p>
+            <span className="footer-production">
+              A{" "}
+              <img
+                src={RealityLogo}
+                alt="Reality Rock Logo"
+                className="footer-logo"
+              />{" "}
+              Production
+            </span>
+            &copy; 2024 UsKidsRockumentary. All rights reserved.
+          </p>
         </footer>
       </div>
     </Router>

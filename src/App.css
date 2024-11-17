@@ -1,3 +1,4 @@
+/* General Body Styles */
 body {
   display: flex;
   flex-direction: column;
@@ -12,20 +13,22 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+/* App Container */
 .app-container {
   display: flex;
   flex-direction: column;
   flex: 1;
 }
 
+/* Navbar Styles */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #000000;
-  color: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   width: 100%;
   box-sizing: border-box;
   position: relative;
@@ -44,48 +47,86 @@ nav {
 }
 
 .nav-links a {
-  color: #ffffff; /* Keep black on larger screens */
+  color: #ffffff; /* White text for links */
   text-decoration: none;
 }
 
 .nav-links a:hover {
-  color: #01c29a; /* Example accent color */
-} 
+  color: #01c29a; /* Accent color on hover */
+}
 
+/* Menu Icon (Visible on Small Screens) */
 .menu-icon {
   display: none;
 }
 
+/* Main Content Area */
 .content {
   flex: 1;
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px); /* Adjust height based on nav and footer */
   width: 100%;
   box-sizing: border-box;
 }
 
+/* Footer Styles */
 .footer {
   margin-top: auto;
   text-align: center;
-  padding: 10px;
-  background: #000000;
-  color: #ffffff;;
+  padding: 20px; /* Increase padding to give more space */
+  background: #000000; /* Black background */
+  color: #ffffff; /* White text */
   width: 100%;
   box-sizing: border-box;
 }
 
-/* Hero Image and Logo Adjustments */
+.footer p {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between logo and text */
+  font-size: 1rem; /* Adjust text size if needed */
+}
+
+.footer-production {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between "A" and the logo */
+}
+
+.footer-logo {
+  height: 40px; /* Adjust to make the logo larger */
+  width: auto; /* Maintain aspect ratio */
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .footer p {
+    flex-direction: column; /* Stack the text and logo for smaller screens */
+    gap: 5px;
+  }
+
+  .footer-logo {
+    height: 30px; /* Slightly smaller logo for smaller screens */
+  }
+}
+
+
+/* Hero Image Styles */
 .hero-image {
   max-width: 98%;
   max-height: 75vh;
   height: auto;
   display: block;
-  margin: 40px auto; /* Adjusts top and bottom margin for better spacing */
-  border: 2px solid white;
+  margin: 40px auto; /* Centered with margin for spacing */
+  border: 2px solid white; /* White border */
+  border-radius: 8px; /* Rounded corners */
   box-sizing: border-box;
 }
 
+/* Navbar Logo */
 .navbar-logo {
   height: 50px;
   margin-right: 20px;
@@ -100,11 +141,11 @@ nav {
     position: absolute;
     top: 50px;
     right: 10px; /* Align dropdown menu to the right side */
-    background-color: rgba(64, 64, 64, 0.9); /* Darker translucent gray background */
+    background-color: rgba(64, 64, 64, 0.9); /* Dark translucent background */
     padding: 10px;
     width: fit-content;
     max-width: 90%;
-    border-radius: 5px;
+    border-radius: 5px; /* Rounded corners for the dropdown */
     z-index: 1;
   }
 
@@ -118,7 +159,7 @@ nav {
   }
 
   .nav-links a {
-    color: #ffffff; /* Change to desired color for small screens */
+    color: #ffffff; /* White text for small screens */
   }
 
   .menu-icon {
@@ -129,7 +170,7 @@ nav {
   }
 }
 
-/* For larger screens (more than 768px) */
+/* Large Screen Adjustments */
 @media (min-width: 769px) {
   .menu-icon {
     display: none;
@@ -137,5 +178,65 @@ nav {
 
   .nav-links {
     display: flex;
+  }
+}
+
+/* Additional Custom Styles */
+
+/* Call-to-Action Button */
+.signup-container {
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #000000; /* Black background */
+  border: 2px solid white; /* White border */
+  border-radius: 8px; /* Rounded corners */
+  text-align: center;
+  max-width: 600px;
+}
+
+.signup-container h2 {
+  margin: 0 0 10px;
+  color: #ffffff; /* White text */
+}
+
+.signup-button {
+  padding: 10px 20px;
+  background-color: #01c29a; /* Green button */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-button:hover {
+  background-color: #0ca385; /* Darker green on hover */
+}
+
+/* Instagram Gallery */
+.instagram-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.instagram-container {
+  max-width: 326px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background for embeds */
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .instagram-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .instagram-container {
+    background-color: transparent; /* Remove background on mobile */
   }
 }
