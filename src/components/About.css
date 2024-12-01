@@ -62,3 +62,31 @@ section {
   margin-bottom: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
+.film-credits {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto; /* Center the list */
+  text-align: center; /* Center align text */
+  max-width: 800px; /* Optional: limit the width for better readability */
+}
+
+.film-credits li {
+  margin-bottom: 20px; /* Add spacing between credits */
+  font-family: 'Lato', sans-serif; /* Consistent with body text */
+  color: #ddd; /* Subtle gray color for text */
+  font-size: 1.2em; /* Increase font size for names */
+}
+
+.film-credits li strong {
+  color: #01c29a; /* Highlight roles with a distinct color */
+  font-size: 1.3em; /* Larger size for roles */
+  font-weight: bold; /* Ensure roles stand out */
+  display: block; /* Ensure titles are on their own line */
+  margin-bottom: 5px; /* Add spacing between title and names */
+}
+
+.film-credits li p {
+  margin: 0;
+  font-size: 1.2em; /* Match font size of credits */
+  color: #ddd; /* Subtle gray color for text */
+}
