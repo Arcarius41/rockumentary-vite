@@ -1,38 +1,64 @@
+/* General Container */
 .about-container {
   padding: 20px;
   max-width: 800px;
   margin: 0 auto;
   color: #fff;
   line-height: 1.6;
+  font-size: 1.1em;
+  text-align: center;
+  font-family: 'Lato', sans-serif; /* Softer font for body text */
 }
 
+/* Headings */
+.about-container h2 {
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: #01c29a; /* Retain the color to match the Bands page */
+  font-family: 'Lato', sans-serif; /* Simple, clean font for headings */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: none; /* Remove shadow for a simpler look */
+}
+
+/* Paragraphs */
 .about-container p {
   margin-bottom: 15px;
-  font-size: 1.1em;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
   color: #ddd;
 }
 
-.about-container h1 {
-  display: none; /* We are removing the title, as per the request */
-}
-
-/* Image container styles */
+/* Image and Caption */
 .image-container {
-  text-align: center;
-  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .about-image {
   max-width: 100%;
   height: auto;
-  border: 3px solid #01c29a; /* Green accent border for image */
+  border: 2px solid white;
   border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Soft shadow */
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Adds depth */
 }
 
 .image-caption {
+  font-size: 0.65em;
+  color: #ccc;
   margin-top: 10px;
-  font-size: 1.1em;
-  color: #01c29a; /* Green accent for caption */
-  font-style: italic;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif; /* Consistent with body text */
+  letter-spacing: 1px;
+}
+
+/* Section Backgrounds */
+section {
+  background: rgba(34, 41, 51, 0.9); /* Slightly darker background */
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
