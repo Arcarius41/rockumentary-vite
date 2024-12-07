@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
-import Bands from "./components/Bands";
+// import Bands from "./components/Bands";
 import "./App.css";
 import RealityLogo from "./assets/Reality_Rock_logo_white.jpg"; // Import the logo
 
@@ -48,11 +48,11 @@ function App() {
                 Store
               </a>
             </li>
-            <li>
+            {/* <li>
               <Link to="/bands" onClick={toggleMenu}>
                 Bands
               </Link>
-            </li>
+            </li> */}
             <li>
               <a
                 href="https://www.gofundme.com/f/alternative-christian-music-documentary"
@@ -69,7 +69,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/bands" element={<Bands />} />
+            {/* <Route path="/bands" element={<Bands />} /> */}
           </Routes>
         </main>
         <footer className="footer">
