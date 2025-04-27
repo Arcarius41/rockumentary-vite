@@ -121,3 +121,48 @@
 .signup-button:hover {
   background-color: #0ca385; /* Darker green on hover */
 }
+section {
+  background: rgba(34, 41, 51, 0.9); /* Slightly darker background */
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+/* New wrapper to match About page spacing */
+.home-inner-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Section inside home */
+.home-inner-container section {
+  background: rgba(34, 41, 51, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Make headings match the About page */
+.home-inner-container h2 {
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: #01c29a;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: none;
+}
+
+/* Make paragraphs match the About page */
+.home-inner-container p {
+  margin-bottom: 15px;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  color: #ddd;
+}

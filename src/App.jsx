@@ -20,11 +20,11 @@ function App() {
           {/* Add the logo */}
           <div className="logo">
             <Link to="/">
-              <img
+              {/* <img
                 src={RealityLogo}
                 alt="Reality Rock Logo"
                 className="navbar-logo"
-              />
+              /> */}
             </Link>
           </div>
 
@@ -53,7 +53,7 @@ function App() {
                 Bands
               </Link>
             </li> */}
-            <li>
+            {/* <li>
               <a
                 href="https://www.gofundme.com/f/alternative-christian-music-documentary"
                 target="_blank"
@@ -62,7 +62,7 @@ function App() {
               >
                 Donate
               </a>
-            </li>
+            </li> */}
           </ul>
         </nav>
         <main className="content">
@@ -83,7 +83,7 @@ function App() {
               />{" "}
               Production
             </span>
-            &copy; 2024 UsKidsRockumentary. All rights reserved.
+            &copy; 2025 UsKidsRockumentary. All rights reserved.
           </p>
         </footer>
       </div>

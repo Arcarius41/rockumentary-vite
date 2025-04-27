@@ -57,6 +57,41 @@ function Home() {
         </ul>
       </div>
 
+      {/* Film Synopsis Section */}
+      <div className="home-inner-container">
+        <section>
+          <h2>Film Synopsis</h2>
+          <p>
+            "Us Kids: An Alternative Music Rebellion" is an engaging trip through
+            the past and a resonant journey through the present with the beloved
+            Southern California bands and artists who built an alternative music
+            movement rooted in faith in the '80's and '90's.
+          </p>
+          <p>
+            Music was in a state of flux, disco was being devoured by punk, new
+            wave and hip-hop were emerging and all was not well within the
+            confines of the church. The individuals of the "Us Kids" story were
+            richly forged in the flames of struggle and emerged stronger to
+            collectively help shape the Southern California music scene.
+          </p>
+          <p>
+            Stories from the bands that are rich, emotionally fragile, laced with
+            humor and vulnerability and heartbreak ring throughout this
+            documentary film. The documentary is a tribute to the rebellious
+            spirit that dared to challenge the norms of both mainstream and
+            Christian culture. It’s a must-watch for music fans and anyone who
+            appreciates the ability music has to bind people together for a
+            lifetime.
+          </p>
+        </section>
+      </div>
+
+      {/* 
+      =============================
+      YouTube Video Embed (commented out)
+      ============================= 
+      */}
+      {/*
       <div className="video-player">
         <iframe
           src="https://www.youtube.com/embed/QBiivw6ZF-8"
@@ -65,7 +100,14 @@ function Home() {
           allowFullScreen
         ></iframe>
       </div>
+      */}
 
+      {/* 
+      =============================
+      Instagram Embed Gallery (commented out)
+      ============================= 
+      */}
+      {/*
       <div className="instagram-gallery">
         <div className="instagram-container">
           <blockquote
@@ -89,6 +131,9 @@ function Home() {
           ></blockquote>
         </div>
       </div>
+      */}
+
+      {/* Sign Up Section */}
       <div className="signup-container">
         <h2>Sign Up for Updates & News</h2>
         <button className="signup-button">Sign Up</button>
@@ -97,6 +142,7 @@ function Home() {
   );
 }
 
+// Instagram script loader
 const instagramScript = document.createElement("script");
 instagramScript.src = "https://www.instagram.com/embed.js";
 instagramScript.async = true;

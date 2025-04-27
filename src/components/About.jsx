@@ -46,7 +46,7 @@ function About() {
         </ul>
       </section>
 
-      <section>
+      {/* <section>
         <h2>Us Kids Film Synopsis</h2>
         <p>
           "Us Kids: An Alternative Music Rebellion" is an engaging trip through
@@ -70,7 +70,7 @@ function About() {
           appreciates the ability music has to bind people together for a
           lifetime.
         </p>
-      </section>
+      </section> */}
     </div>
   );
 }
