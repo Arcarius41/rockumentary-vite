@@ -6,7 +6,7 @@
   display: block;
   margin: 20px auto;
   border: 2px solid white;
-  border-radius: 8px; /* Rounds corners */
+  border-radius: 8px;
   box-sizing: border-box;
 }
 
@@ -38,86 +38,185 @@
   font-size: 2em;
 }
 
-/* Video Player Styles */
-.video-player {
-  margin: 60px auto;
+/* Main Content Container */
+.home-inner-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
+  font-family: 'Lato', sans-serif;
 }
 
-.video-player iframe {
-  width: 100%;
-  max-width: 980px; /* Matches combined Instagram width */
-  aspect-ratio: 16 / 9;
-  border: 2px solid white;
-  border-radius: 8px; /* Rounds corners */
-  box-sizing: border-box;
+/* Section Styling */
+.home-inner-container section {
+  background: rgba(34, 41, 51, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-/* Instagram Gallery Styles */
-.instagram-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
+.home-inner-container h2 {
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: #01c29a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-/* Instagram Embed Container */
-.instagram-container {
-  max-width: 326px;
-  width: 100%;
-  border: none;
+.home-inner-container p {
+  margin-bottom: 15px;
+  color: #ddd;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
 }
 
-/* Dark background styling only for larger screens */
-@media (min-width: 769px) {
-  .instagram-container {
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
-  }
-
-  .instagram-gallery {
-    margin-bottom: 40px; /* Adds space between Instagram gallery and footer on larger screens */
-  }
-}
-
-/* Adjust layout for mobile screens */
-@media (max-width: 768px) {
-  .instagram-gallery {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-/* Sign-Up Section Styles */
+/* Signup Container */
 .signup-container {
-  background-color: black;
+  background-color:#2f3542;
   color: white;
   border: 2px solid white;
   padding: 20px;
   text-align: center;
   margin: 40px auto;
-  max-width: 500px;
+  max-width: 600px;
   border-radius: 8px;
 }
 
-.signup-container h2 {
-  font-size: 1.5em;
-  margin-bottom: 15px;
+/* Brevo Form Specific Adjustments */
+.brevo-form-wrapper {
+  margin-top: 20px;
 }
 
-.signup-button {
-  background-color: #01c29a; /* Matches the green color */
-  color: black;
+/* Remove unnecessary backgrounds */
+.sib-form {
+  background: none !important;
+}
+
+.sib-container--large {
+  background-color: rgba(255, 255, 255, 0.97) !important;
+  border: 1px solid #c0ccd9;
+  border-radius: 6px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Form Input Field Styling */
+.sib-form input[type="email"] {
+  background-color: #ffffff !important;
+  color: #222 !important;
+  border: 1px solid #c0ccd9 !important;
+  padding: 10px;
+  border-radius: 6px;
+  width: 100% !important;
+  max-width: none;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+}
+
+/* Label Visibility */
+.sib-form .entry__label {
+  color: #666666 !important;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center !important;
+}
+
+/* Placeholder Text */
+.sib-form input::placeholder {
+  color: #a8a6a6 !important;
+}
+
+/* Helper Text (sub-label) - HIDE IT */
+.sib-form .entry__specification {
+  display: none !important;
+}
+
+/* Button Styling */
+.sib-form-block__button {
+  background-color: #01c29a !important;
+  color: #ffffff !important;
   border: none;
-  padding: 10px 20px;
+  border-radius: 6px;
+  padding: 12px 24px;
   font-size: 1em;
+  font-weight: 700;
+  display: inline-block;
+  margin: 20px auto 0 auto;
   cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  width: auto;
 }
 
-.signup-button:hover {
-  background-color: #0ca385; /* Darker green on hover */
+/* Button Hover Effect */
+.sib-form-block__button:hover {
+  background-color: #0ca385 !important;
+}
+
+/* ✅ CAPTCHA Fixes — full centering */
+.sib-captcha,
+.sib-captcha .form__entry,
+#sib-captcha,
+.g-recaptcha {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+.g-recaptcha > div {
+  margin: 0 auto !important;
+}
+
+/* ✅ Mobile adjustments */
+@media (max-width: 600px) {
+  .signup-container {
+    max-width: 90%;
+  }
+
+  .g-recaptcha,
+  #sib-captcha {
+    transform: scale(0.82);
+    transform-origin: center;
+  }
+
+  .g-recaptcha > div {
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .g-recaptcha,
+  #sib-captcha {
+    transform: scale(0.75);
+  }
+}
+
+/* Fix container alignment just in case */
+.sib-form .entry__field {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.brevo-form-frame-container {
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 8px;
+  background-color: #000000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .brevo-form-frame-container {
+    margin: 20px auto;
+    padding: 15px;
+  }
 }

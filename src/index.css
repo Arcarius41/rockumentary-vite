@@ -21,9 +21,20 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+
+  /* --- CURRENT active background (matches main branch) --- */
   background-color: var(--dark-var-1-color);
+
+  /* --- Alternative backgrounds for future testing: --- */
+
+  /* Background image version */
+  /* background: url('src/assets/Guitar Background 9.webp') repeat;
+     background-size: cover; */
+
   color: rgba(255, 255, 255, 0.87);
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
+
 /* .menu-icon {
   display: block !important;
   visibility: visible !important;

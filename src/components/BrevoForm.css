@@ -1,0 +1,98 @@
+.brevo-form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  background-color: #292f37;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+/* Form structure */
+.brevo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin: 0;
+}
+
+/* REMOVE thick border from inner form box */
+.brevo-form .sib-container--large,
+.brevo-form-container form {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Email input field */
+.brevo-form input[type="email"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #888;
+  /* Subtle gray border */
+  font-size: 1rem;
+  background-color: #fff;
+  color: #000;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.brevo-form input[type="email"]:focus {
+  border-color: #01c29a;
+  outline: none;
+}
+
+/* Button styling */
+.brevo-form button {
+  background-color: #01c29a;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  min-width: 160px;
+  width: fit-content;
+}
+
+.brevo-form button:hover {
+  background-color: #0ca385;
+}
+
+/* Center reCAPTCHA */
+.recaptcha {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  transform: scale(0.88);
+  /* ✅ Shrink size slightly */
+  transform-origin: center;
+}
+
+/* Message display styling */
+.form-message {
+  margin-top: 20px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.success {
+  background-color: #e7faf0;
+  color: #085229;
+  border: 1px solid #13ce66;
+}
+
+.error {
+  background-color: #ffeded;
+  color: #661d1d;
+  border: 1px solid #ff4949;
+}
