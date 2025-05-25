@@ -183,16 +183,7 @@ nav {
 
 /* Additional Custom Styles */
 
-/* Call-to-Action Button */
-.signup-container {
-  margin: 20px auto;
-  padding: 15px;
-  background-color: #000000; /* Black background */
-  border: 2px solid white; /* White border */
-  border-radius: 8px; /* Rounded corners */
-  text-align: center;
-  max-width: 600px;
-}
+
 
 .signup-container h2 {
   margin: 0 0 10px;
