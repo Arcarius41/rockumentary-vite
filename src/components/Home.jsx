@@ -102,7 +102,7 @@ function Home() {
             musicians who were at the center of an alternative rock movement
             rooted in faith during the '80s and 90s.
           </p>
-          <p>
+          {/* <p>
             Music was in a state of flux, disco was being devoured by punk, new
             wave and hip-hop were emerging and all was not well within the
             confines of the church. The individuals of the "Us Kids" story were
@@ -117,7 +117,7 @@ function Home() {
             Christian culture. It’s a must-watch for music fans and anyone who
             appreciates the ability music has to bind people together for a
             lifetime.
-          </p>
+          </p> */}
         </section>
       </div>
 
