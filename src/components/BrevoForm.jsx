@@ -95,7 +95,7 @@ function BrevoForm() {
 
       {status === "success" && (
         <div className="form-message success">
-          ✅ Subscription successful! Check your email.
+          ✅ You're on the list! Thanks for subscribing.
         </div>
       )}
       {status === "error" && (
