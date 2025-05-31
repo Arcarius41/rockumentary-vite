@@ -12,7 +12,7 @@ function About() {
           alt="Todd Zeller & John Smeby Making It Happen"
           className="about-image"
         />
-        <p className="image-caption">Todd Zeller & John Smeby Making It Happen</p>
+        <p className="image-caption">Todd A. Zeller & John Smeby Making It Happen</p>
       </div>
 
       {/* New content structure */}
@@ -29,7 +29,7 @@ function About() {
         <ul className="film-credits">
           <li>
             <strong>Directed and Produced by</strong>
-            <p>John Smeby and Todd Zeller</p>
+            <p>John Smeby and Todd A. Zeller</p>
           </li>
           <li>
             <strong>Executive Producers</strong>

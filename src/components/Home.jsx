@@ -10,7 +10,9 @@ function Home() {
     // Styling adjustments after Brevo loads
     const fixBrevoForm = () => {
       const button = document.querySelector("#sib-form button");
-      const inputField = document.querySelector("#sib-form input[type='email']"); // ✅ Fixed this
+      const inputField = document.querySelector(
+        "#sib-form input[type='email']"
+      ); // ✅ Fixed this
       const label = document.querySelector("#sib-form label.entry__label");
 
       if (button) {
@@ -50,10 +52,42 @@ function Home() {
       <div className="social-icons-container">
         <span>Connect:</span>
         <ul className="social-icons">
-          <li><a href="https://www.facebook.com/UsKidsAnAlternativeMusicRebellion" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
-          <li><a href="https://www.instagram.com/uskidsrockumentary/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
-          <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-youtube"></i></a></li>
-          <li><a href="https://open.spotify.com/playlist/3WioijiRe5NGtTFXdtfQbQ?si=ejzjoW_0SMmRFf90PGljLg&pi=u-1keUEzYpRJSVd" target="_blank" rel="noopener noreferrer"><i className="fab fa-spotify"></i></a></li>
+          <li>
+            <a
+              href="https://www.facebook.com/UsKidsAnAlternativeMusicRebellion"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/uskidsrockumentary/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://open.spotify.com/playlist/3WioijiRe5NGtTFXdtfQbQ?si=ejzjoW_0SMmRFf90PGljLg&pi=u-1keUEzYpRJSVd"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-spotify"></i>
+            </a>
+          </li>
         </ul>
       </div>
 
@@ -61,10 +95,12 @@ function Home() {
         <section>
           <h2>Film Synopsis</h2>
           <p>
-            "Us Kids: An Alternative Music Rebellion" is an engaging trip through
-            the past and a resonant journey through the present with the beloved
-            Southern California bands and artists who built an alternative music
-            movement rooted in faith in the '80's and '90's.
+            'Us Kids: An Alternative Music Rebellion' provides an engaging
+            journey through the past of alternative music from Califonia.
+            Beginning in Orange County and gradually branching out across the
+            country (and around the world) this film tells the story of
+            musicians who were at the center of an alternative rock movement
+            rooted in faith during the '80s and 90s.
           </p>
           <p>
             Music was in a state of flux, disco was being devoured by punk, new
@@ -74,8 +110,8 @@ function Home() {
             collectively help shape the Southern California music scene.
           </p>
           <p>
-            Stories from the bands that are rich, emotionally fragile, laced with
-            humor and vulnerability and heartbreak ring throughout this
+            Stories from the bands that are rich, emotionally fragile, laced
+            with humor and vulnerability and heartbreak ring throughout this
             documentary film. The documentary is a tribute to the rebellious
             spirit that dared to challenge the norms of both mainstream and
             Christian culture. It’s a must-watch for music fans and anyone who
