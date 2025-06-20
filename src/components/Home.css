@@ -220,3 +220,49 @@
     padding: 15px;
   }
 }
+.quote-block {
+  max-width: 700px;
+  margin: 0px auto 60px auto; /* reduced top margin */
+  padding: 0 20px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color:  #01c29a;
+  position: relative;
+}
+
+.quote-block::before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 1px;
+  background-color: #ffffff;
+  margin: 0 auto 30px auto; /* reduced bottom margin under line */
+  opacity: 0.5;
+}
+
+
+.quote-block p {
+  margin-bottom: 30px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.quote-block p span {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.95em;
+  opacity: 0.9;
+}
+
+/* Responsive font size */
+@media (max-width: 600px) {
+  .quote-block p {
+    font-size: 1em;
+  }
+}
+
+
+
