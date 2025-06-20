@@ -120,6 +120,22 @@ function Home() {
           </p> */}
         </section>
       </div>
+      <div className="quote-block">
+        <p>
+          “I remember that time in Southern California very fondly, and a lot of
+          good music was being made. It was just a really great kind of
+          collaborative scene.”
+          <span>— Steve Taylor (vocalist, lyricist, producer)</span>
+        </p>
+        <p>
+          “This music was a huge part of my musical upbringing. It was very
+          exciting! There was just an explosion of bands during that time. I
+          would go see these shows all the time.”
+          <span>
+            — Jeff Schroeder (former lead guitarist for Smashing Pumpkins)
+          </span>
+        </p>
+      </div>
 
       <div className="signup-container">
         <h2>Sign Up for Updates & News</h2>
