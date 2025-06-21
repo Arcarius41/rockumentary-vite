@@ -28,20 +28,28 @@ function About() {
         </p>
         <ul className="film-credits">
           <li>
-            <strong>Directed and Produced by</strong>
-            <p>John Smeby and Todd A. Zeller</p>
+            <strong>Director</strong>
+            <p>Todd A. Zeller</p>
+          </li>
+          <li>
+            <strong>Producer</strong>
+            <p>John Smeby</p>
           </li>
           <li>
             <strong>Executive Producers</strong>
             <p>Jason Dean, Adel Meisenheimer, and John Smeby</p>
           </li>
           <li>
-            <strong>Soundtrack Produced by</strong>
-            <p>Jason Dean</p>
+            <strong>Editor</strong>
+            <p>Todd A. Zeller</p>
           </li>
           <li>
-            <strong>Film Score Created by</strong>
-            <p>The Choir</p>
+            <strong>Film Score</strong>
+            <p>Created by The Choir</p>
+          </li>
+          <li>
+            <strong>Film Soundtrack</strong>
+            <p> Produced by Jason Dean</p>
           </li>
         </ul>
       </section>
