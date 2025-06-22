@@ -90,37 +90,7 @@ function Home() {
           </li>
         </ul>
       </div>
-
-      <div className="home-inner-container">
-        <section>
-          <h2>Film Synopsis</h2>
-          <p>
-            'Us Kids: An Alternative Music Rebellion' provides an engaging
-            journey through the past of alternative music from Califonia.
-            Beginning in Orange County and gradually branching out across the
-            country (and around the world) this film tells the story of
-            musicians who were at the center of an alternative rock movement
-            rooted in faith during the '80s and 90s.
-          </p>
-          {/* <p>
-            Music was in a state of flux, disco was being devoured by punk, new
-            wave and hip-hop were emerging and all was not well within the
-            confines of the church. The individuals of the "Us Kids" story were
-            richly forged in the flames of struggle and emerged stronger to
-            collectively help shape the Southern California music scene.
-          </p>
-          <p>
-            Stories from the bands that are rich, emotionally fragile, laced
-            with humor and vulnerability and heartbreak ring throughout this
-            documentary film. The documentary is a tribute to the rebellious
-            spirit that dared to challenge the norms of both mainstream and
-            Christian culture. It’s a must-watch for music fans and anyone who
-            appreciates the ability music has to bind people together for a
-            lifetime.
-          </p> */}
-        </section>
-      </div>
-      <div className="quote-block">
+       <div className="quote-block">
         <p>
           “I remember that time in Southern California very fondly, and a lot of
           good music was being made. It was just a really great kind of
@@ -136,6 +106,39 @@ function Home() {
           </span>
         </p>
       </div>
+      <div className="home-inner-container">
+        <section>
+          <h2>Film Synopsis</h2>
+          <p>
+            ‘Us Kids: An Alternative Music Rebellion' provides an engaging
+            journey through the past of alternative music from Califonia.
+            Beginning in Orange County and gradually branching out across the
+            country (and around the world) this film tells the story of
+            musicians who were at the center of an alternative rock movement
+            rooted in faith during the '80s and 90s.
+          </p>
+          <p>
+            The musicians and artists of the 'Us Kids' story were raised in a
+            landscape filled with struggles and challenges around every corner.
+            It was these experiences that collectively helped shape the Southern
+            (and Northern) California music scene as we know it today.
+          </p>
+          <p>
+            You'll hear story after story filled with personal triumphs,
+            heartache and humor as they recall in vivid detail the recording
+            sessions, concert tours and behind-the-scenes adventures that only
+            rock and roll can provide. This unique documentary film pays tribute
+            to the rebellious spirit of the music that dared to challenge the
+            norms of both the church and mainstream culture.
+          </p>
+          <p>
+            'Us Kids' is a "must see" for music fans everywhere, and for anyone
+            who appreciates the ability of music to bind people together for a
+            lifetime.
+          </p>
+        </section>
+      </div>
+     
 
       <div className="signup-container">
         <h2>Sign Up for Updates & News</h2>
