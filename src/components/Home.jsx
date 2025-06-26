@@ -1,6 +1,11 @@
 import React, { useEffect } from "react";
 import "./Home.css";
 import UsKidsWebsiteBanner from "../assets/UsKidsWebsiteBanner.jpg";
+import UsKids1 from "../assets/us_kids_1.jpg";
+import UsKids2 from "../assets/us_kids_2.jpg";
+import UsKids3 from "../assets/us_kids_3.jpg";
+
+
 import BrevoForm from "./BrevoForm"; // ✅ Corrected file name
 
 function Home() {
@@ -117,12 +122,14 @@ function Home() {
             musicians who were at the center of an alternative rock movement
             rooted in faith during the '80s and 90s.
           </p>
+          <img src={UsKids1} alt="Us Kids band promo" className="synopsis-image" />
           <p>
             The musicians and artists of the 'Us Kids' story were raised in a
             landscape filled with struggles and challenges around every corner.
             It was these experiences that collectively helped shape the Southern
             (and Northern) California music scene as we know it today.
           </p>
+          <img src={UsKids2} alt="Southern California concert scene" className="synopsis-image" />
           <p>
             You'll hear story after story filled with personal triumphs,
             heartache and humor as they recall in vivid detail the recording
@@ -131,6 +138,7 @@ function Home() {
             to the rebellious spirit of the music that dared to challenge the
             norms of both the church and mainstream culture.
           </p>
+           <img src={UsKids3} alt="Vintage stage photo" className="synopsis-image" />
           <p>
             'Us Kids' is a "must see" for music fans everywhere, and for anyone
             who appreciates the ability of music to bind people together for a
