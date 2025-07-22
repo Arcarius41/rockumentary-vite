@@ -75,7 +75,7 @@ function Home() {
               <i className="fab fa-instagram"></i>
             </a>
           </li>
-          <li>
+          {/* <li>
             <a
               href="https://www.youtube.com/"
               target="_blank"
@@ -83,7 +83,7 @@ function Home() {
             >
               <i className="fa-brands fa-youtube"></i>
             </a>
-          </li>
+          </li> */}
           <li>
             <a
               href="https://open.spotify.com/playlist/3WioijiRe5NGtTFXdtfQbQ?si=ejzjoW_0SMmRFf90PGljLg&pi=u-1keUEzYpRJSVd"
