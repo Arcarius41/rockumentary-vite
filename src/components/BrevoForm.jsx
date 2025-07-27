@@ -51,7 +51,7 @@ function BrevoForm() {
 
     try {
       await fetch(
-        "https://sibforms.com/serve/MUIFALrJ6dfgB9ifyRhIYvlouVC1wwf34o3TdPmlG4q8kygSMoVwqMULFK29onJI-aGpf1NT6VzLrpI6qkApOUWf1jIlWQjaPhXGmN0JH2yAP2UaLjWMRy4AumF-Kw-NsrOeceWi4WG2LS6hn6ak-P0UhQjwczlMHqeXEIJK3LrHwE2Q1A9RmP1dmcELG3hB-f2WwbGgrfejXRdt",
+        "https://e06a6059.sibforms.com/serve/MUIFAEHhtNIyDRuj2znFBBMM1obaAImYeqYJ7DyFN7q5kyAqR2xUhZeWKEVXVVmrhYu1WP_vaIjFsUSKW2xPD3MVZMP-VYM7lXiwS2H0_cZ0YwsT4bg0sApdvsoxz-IGqneTZpbtdz-pBQFK2SiEN1FVGRiq2lMONQGbMdsdoQdUWGXqGAWRlbz6wwceIW_Q5jcU4ui7dG7XQ9P2",
         {
           method: "POST",
           mode: "no-cors",
