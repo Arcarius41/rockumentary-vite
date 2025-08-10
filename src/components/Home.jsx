@@ -116,7 +116,7 @@ function Home() {
           <h2>Film Synopsis</h2>
           <p>
             ‘Us Kids: An Alternative Music Rebellion' provides an engaging
-            journey through the past of alternative music from Califonia.
+            journey through the past of alternative music from California.
             Beginning in Orange County and gradually branching out across the
             country (and around the world) this film tells the story of
             musicians who were at the center of an alternative rock movement
