@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import "./App.css";
 import RealityLogo from "./assets/Reality_Rock_logo_white.jpg";
-import PosterImg from "./assets/poster_uskids.jpeg"; // Replace with the real poster image
+import PosterImg from "./assets/poster_uskidsV2.jpeg"; //poster image
 
 function App() {
   const [menuActive, setMenuActive] = useState(false);
