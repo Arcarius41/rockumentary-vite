@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import "./Home.css";
 import UsKidsWebsiteBanner from "../assets/UsKidsWebsiteBanner.jpg";
-import UsKids1 from "../assets/us_kids_1.jpg";
-import UsKids2 from "../assets/us_kids_2.jpg";
-import UsKids3 from "../assets/us_kids_3.jpg";
+import UsKids1 from "../assets/DMC.jpg";
+import UsKids2 from "../assets/Mortal.jpg";
+import UsKids3 from "../assets/Prayer_Chain.jpg";
 
 
 import BrevoForm from "./BrevoForm"; // ✅ Corrected file name
