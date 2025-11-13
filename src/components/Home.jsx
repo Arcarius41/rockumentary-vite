@@ -5,7 +5,6 @@ import UsKids1 from "../assets/DMC.jpg";
 import UsKids2 from "../assets/Mortal.jpg";
 import UsKids3 from "../assets/Prayer_Chain.jpg";
 
-
 import BrevoForm from "./BrevoForm"; // ✅ Corrected file name
 
 function Home() {
@@ -75,15 +74,17 @@ function Home() {
               <i className="fab fa-instagram"></i>
             </a>
           </li>
-          {/* <li>
-            <a
-              href="https://www.youtube.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa-brands fa-youtube"></i>
-            </a>
-          </li> */}
+          {
+            <li>
+              <a
+                href="https://youtube.com/@uskids-alternativemusicmovie?si=a4Q0aiEScp6jEfIA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+          }
           <li>
             <a
               href="https://open.spotify.com/playlist/3WioijiRe5NGtTFXdtfQbQ?si=ejzjoW_0SMmRFf90PGljLg&pi=u-1keUEzYpRJSVd"
@@ -93,9 +94,18 @@ function Home() {
               <i className="fab fa-spotify"></i>
             </a>
           </li>
+          <li>
+            <a
+              href="https://www.tiktok.com/@us_kids?_r=1&_t=ZT-91GSBTvWQWs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-tiktok"></i>
+            </a>
+          </li>
         </ul>
       </div>
-       <div className="quote-block">
+      <div className="quote-block">
         <p>
           “I remember that time in Southern California very fondly, and a lot of
           good music was being made. It was just a really great kind of
@@ -122,14 +132,22 @@ function Home() {
             musicians who were at the center of an alternative rock movement
             rooted in faith during the '80s and 90s.
           </p>
-          <img src={UsKids1} alt="Us Kids band promo" className="synopsis-image" />
+          <img
+            src={UsKids1}
+            alt="Us Kids band promo"
+            className="synopsis-image"
+          />
           <p>
             The musicians and artists of the 'Us Kids' story were raised in a
             landscape filled with struggles and challenges around every corner.
             It was these experiences that collectively helped shape the Southern
             (and Northern) California music scene as we know it today.
           </p>
-          <img src={UsKids2} alt="Southern California concert scene" className="synopsis-image" />
+          <img
+            src={UsKids2}
+            alt="Southern California concert scene"
+            className="synopsis-image"
+          />
           <p>
             You'll hear story after story filled with personal triumphs,
             heartache and humor as they recall in vivid detail the recording
@@ -138,7 +156,11 @@ function Home() {
             to the rebellious spirit of the music that dared to challenge the
             norms of both the church and mainstream culture.
           </p>
-           <img src={UsKids3} alt="Vintage stage photo" className="synopsis-image" />
+          <img
+            src={UsKids3}
+            alt="Vintage stage photo"
+            className="synopsis-image"
+          />
           <p>
             'Us Kids' is a "must see" for music fans everywhere, and for anyone
             who appreciates the ability of music to bind people together for a
@@ -146,7 +168,6 @@ function Home() {
           </p>
         </section>
       </div>
-     
 
       <div className="signup-container">
         <h2>Sign Up for Updates & News</h2>
