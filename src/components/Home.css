@@ -38,6 +38,29 @@
   font-size: 2em;
 }
 
+/* Prevent edge-to-edge squeeze on small screens */
+@media (max-width: 480px) {
+  .social-icons-container {
+    padding-inline: 14px;          /* adds left/right breathing room */
+    gap: 10px;                      /* small gap between label and icons */
+  }
+
+  .social-icons-container span {
+    margin-right: 8px;
+    white-space: nowrap;            /* keep "Connect:" on one piece */
+  }
+
+  .social-icons {
+    gap: 14px;                      /* tighten icon spacing a bit */
+  }
+
+  .social-icons a {
+    font-size: 1.6em;               /* slightly smaller icons on phones */
+    line-height: 1;                 /* removes extra vertical padding */
+  }
+}
+
+
 /* Main Content Container */
 .home-inner-container {
   padding: 20px;
