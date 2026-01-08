@@ -69,7 +69,7 @@ function App() {
               />{" "}
               Production
             </span>
-            &copy; 2025 UsKidsRockumentary. All rights reserved.
+            &copy; 2026 UsKidsRockumentary. All rights reserved.
           </p>
         </footer>
 
