@@ -90,3 +90,24 @@ section {
   font-size: 1.2em; /* Match font size of credits */
   color: #ddd; /* Subtle gray color for text */
 }
+/* Support Staff List */
+.support-staff-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.support-staff-list li {
+  margin-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+  color: #ffffff;
+  font-size: 1.1em;
+}
+
+/* Closing thank-you line */
+.support-thanks {
+  margin-top: 20px;
+  font-style: italic;
+  color: #ccc;
+}

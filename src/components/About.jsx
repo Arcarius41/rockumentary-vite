@@ -1,6 +1,6 @@
-import React from 'react';
-import './About.css';
-import ToddAndJohn from '../assets/Todd&John.jpg'; // Ensure this path is correct
+import React from "react";
+import "./About.css";
+import ToddAndJohn from "../assets/Todd&John.jpg"; // Ensure this path is correct
 
 function About() {
   return (
@@ -12,7 +12,9 @@ function About() {
           alt="Todd Zeller & John Smeby Making It Happen"
           className="about-image"
         />
-        <p className="image-caption">Todd A. Zeller & John Smeby Making It Happen</p>
+        <p className="image-caption">
+          Todd A. Zeller & John Smeby Making It Happen
+        </p>
       </div>
 
       {/* New content structure */}
@@ -20,11 +22,11 @@ function About() {
         <h2>The Us Kids Film Team</h2>
         <p>
           Our team is composed of music lovers, filmmakers, and creatives
-          dedicated to capturing these unique stories. We believe that music
-          has the power to change lives, and the stories behind the music are
-          just as important as the songs. Join us on this journey as we shine a
-          spotlight on the voices that have defined a genre, impacted faith,
-          and inspired change.
+          dedicated to capturing these unique stories. We believe that music has
+          the power to change lives, and the stories behind the music are just
+          as important as the songs. Join us on this journey as we shine a
+          spotlight on the voices that have defined a genre, impacted faith, and
+          inspired change.
         </p>
         <ul className="film-credits">
           <li>
@@ -52,6 +54,36 @@ function About() {
             <p> Produced by Jason Dean</p>
           </li>
         </ul>
+      </section>
+
+      <section className="about-section support-staff">
+        <h2>Support Staff</h2>
+
+        <p>
+          Our crew has been working passionately behind the scenes for over two
+          years. Without their time and effort this film would simply not be
+          possible.
+        </p>
+
+        <p>
+          From social media management to graphic arts design to editing,
+          memorabilia collection, and interview support, the following team
+          members are helping us bring the <em>Us Kids</em> story to life:
+        </p>
+
+        <ul className="support-staff-list">
+          <li>Chad Ashton</li>
+          <li>Rob Birks</li>
+          <li>Eddie Enciu</li>
+          <li>Peter Paul Petretta</li>
+          <li>Dearl Poore</li>
+          <li>Rob Reynolds</li>
+          <li>Paul Stier</li>
+        </ul>
+
+        <p className="support-thanks">
+          Thank you for your ongoing dedication to the <em>Us Kids</em> story 🙏🏻
+        </p>
       </section>
 
       {/* <section>
