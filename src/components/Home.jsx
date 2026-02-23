@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "./Home.css";
 import UsKidsWebsiteBanner from "../assets/UsKidsWebsiteBanner.jpg";
-import UsKids1 from "../assets/DMC.jpg";
-import UsKids2 from "../assets/Mortal.jpg";
-import UsKids3 from "../assets/Prayer_Chain.jpg";
+import UsKids1 from "../assets/IMG_1256.jpeg";
+import UsKids2 from "../assets/IMG_7667.jpeg";
+import UsKids3 from "../assets/IMG_8713.jpeg";
 
 import BrevoForm from "./BrevoForm"; // ✅ Corrected file name
 
@@ -125,12 +125,9 @@ function Home() {
         <section>
           <h2>Film Synopsis</h2>
           <p>
-            ‘Us Kids: An Alternative Music Rebellion' provides an engaging
-            journey through the past of alternative music from California.
-            Beginning in Orange County and gradually branching out across the
-            country (and around the world) this film tells the story of
-            musicians who were at the center of an alternative rock movement
-            rooted in faith during the '80s and 90s.
+            {
+              "'Us Kids: An Alternative Music Rebellion' provides an engaging journey through the past of alternative music from California. Beginning in Orange County and gradually branching out across the country (and around the world), this film tells the story of musicians who were at the center of an alternative rock movement rooted in faith during the '80s and 90s."
+            }
           </p>
           <img
             src={UsKids1}
@@ -138,10 +135,9 @@ function Home() {
             className="synopsis-image"
           />
           <p>
-            The musicians and artists of the 'Us Kids' story were raised in a
-            landscape filled with struggles and challenges around every corner.
-            It was these experiences that collectively helped shape the Southern
-            (and Northern) California music scene as we know it today.
+            {
+              "The musicians and artists of the 'Us Kids' story were raised in a landscape filled with struggles and challenges around every corner. It was these experiences that collectively helped shape the Southern (and Northern) California music scene as we know it today."
+            }
           </p>
           <img
             src={UsKids2}
@@ -149,12 +145,9 @@ function Home() {
             className="synopsis-image"
           />
           <p>
-            You'll hear story after story filled with personal triumphs,
-            heartache and humor as they recall in vivid detail the recording
-            sessions, concert tours and behind-the-scenes adventures that only
-            rock and roll can provide. This unique documentary film pays tribute
-            to the rebellious spirit of the music that dared to challenge the
-            norms of both the church and mainstream culture.
+            {
+              "You'll hear story after story filled with personal triumphs, heartache and humor as they recall in vivid detail the recording sessions, concert tours and behind-the-scenes adventures that only rock and roll can provide. This unique documentary film pays tribute to the rebellious spirit of the music that dared to challenge the norms of both the church and mainstream culture."
+            }
           </p>
           <img
             src={UsKids3}
@@ -162,9 +155,9 @@ function Home() {
             className="synopsis-image"
           />
           <p>
-            'Us Kids' is a "must see" for music fans everywhere, and for anyone
-            who appreciates the ability of music to bind people together for a
-            lifetime.
+            {
+              "'Us Kids' is a \"must see\" for music fans everywhere, and for anyone who appreciates the ability of music to bind people together for a lifetime."
+            }
           </p>
         </section>
       </div>
