@@ -43,11 +43,11 @@ function App() {
                 Poster
               </button>
             </li>
-            <li>
+            {/* <li>
               <a href="https://3b1799-22.myshopify.com" onClick={toggleMenu}>
                 Store
               </a>
-            </li>
+            </li> */}
           </ul>
         </nav>
 
